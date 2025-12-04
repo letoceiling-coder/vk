@@ -1,0 +1,39 @@
+{
+    "name": "letoceiling-coder/vk",
+    "description": "Laravel package for VK Bot API integration",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["vk", "vkontakte", "bot", "api", "laravel"],
+    "authors": [
+        {
+            "name": "Letoceiling Coder",
+            "email": "info@letoceiling-coder.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^12.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "LetoceilingCoder\\VK\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LetoceilingCoder\\VK\\VKServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
+
